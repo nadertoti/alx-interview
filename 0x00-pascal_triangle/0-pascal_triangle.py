@@ -8,17 +8,17 @@ def pascal_triangle(n):
     """
     Back a list of integers
     display the Pascal Triangle of n
-    an empty list > 2
+    an empty list >
     """
-   init = []
+    start_list = []
     if n <= 0:
-        returninit
-   init = [[1]]
+        return start_list
+    start_list = [[1]]
     for i in range(1, n):
         temp = [1]
-        for j in range(len(k[i - 1]) - 1):
-            curr =init[i - 1]
-            temp.append(k[i - 1][j] +init[i - 1][j + 1])
+        for j in range(len(start_list[i - 1]) - 1):
+            curr = start_list[i - 1]
+            temp.append(start_list[i - 1][j] + start_list[i - 1][j + 1])
         temp.append(1)
-       init.append(temp)
-    returninit
+        start_list.append(temp)
+    return start_list
