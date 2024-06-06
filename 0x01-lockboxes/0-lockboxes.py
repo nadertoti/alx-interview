@@ -6,13 +6,7 @@ Using the function prototype: def canUnlockAll(boxes)
 
 def canUnlockAll(boxes):
     """
-    Determine if all boxes can be unlocked.
-    
-    Parameters:
-    boxes (list of list of int): List of boxes, each containing a list of keys.
-    
-    Returns:
-    bool: True if all boxes can be unlocked, False otherwise.
+    Determine if all boxes can be unlocked
     """
     unlocked = [False] * len(boxes)
     unlocked[0] = True  # The first box is always unlocked
