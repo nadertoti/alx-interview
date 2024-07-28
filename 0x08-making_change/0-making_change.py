@@ -1,12 +1,13 @@
 
 #!/usr/bin/python3
-"""Identify the lower number of
-pices needed to given total for result
+"""Determine the fewest number of coins
+needed to meet a given amount total
 """
 
 
 def makeChange(coins, total):
-    """Return lowest number to meet the requirements
+    """Return fewest number of coins needed to meet total
+    0 if total is 0 or less, -1 if total cannot be met
     """
     if total <= 0:
         return 0
